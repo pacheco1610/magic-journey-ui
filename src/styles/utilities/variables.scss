@@ -1,0 +1,19 @@
+$white: #fff;
+$pink-magic: #e80a56;
+$purple-magic: #75276f;
+$blue-magic: #005091;
+
+
+/* Medias Querys*/
+$bp-new-small: 320px !default;
+$bp-new-medium-simple: 640px !default;
+$bp-new-medium: 768px !default;
+$bp-new-medium-tablet: 880px !default;
+$bp-new-medium-high: 1024px !default;
+$bp-new-large: 1280px !default;
+$bp-new-xlarge: 1440px !default;
+$bp-new-homepage-max: 1500px !default;
+
+body {
+  font-family: 'Product Sans', sans-serif;
+}
