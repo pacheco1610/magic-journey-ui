@@ -6,6 +6,9 @@
     align-items: center;
     //padding: 1rem 2rem;
 }
+.reverse {
+  flex-direction: row-reverse;
+}
 .offer-carrusel {
     width: 90%;
     height: 500px;
@@ -140,6 +143,9 @@ form {
     .offer {
         flex-direction: row;
         padding: 5rem;
+    }
+    .reverse {
+      flex-direction: row-reverse;
     }
     .offer-contenForm {
       padding: 2rem;

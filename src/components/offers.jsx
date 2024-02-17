@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-export default function offers(){
+export default function offers({reverse}){
 
   return (
-    <section className='offer'>
+    <section className={reverse === "true" ? "reverse offer" : "offer" }>
       <div className='offer-carrusel' style={{backgroundImage:`url("https://media.admagazine.com/photos/641239e4d3f4fe9a251b2477/1:1/w_1999,h_1999,c_limit/destinos-para-bodas.jpg")`}}>
         <div className='offer-titleOffers'>
           <h4 className='offer-h4'>Declaracion de Amor Paris</h4>

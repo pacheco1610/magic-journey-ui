@@ -8,6 +8,7 @@ function App() {
       <Header />
       <HomeSlider />
       <Offers/>
+      <Offers reverse="true" />
     </div>
   );
 }
