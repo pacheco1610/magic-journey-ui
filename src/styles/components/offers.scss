@@ -55,6 +55,7 @@ h3 {
     font-size: 30px;
     font-weight: 300;
     color:$pink-magic;
+    margin-bottom: 1rem;
 }
 form {
     font-family: 'Roboto', sans-serif;
@@ -132,12 +133,15 @@ form {
       width: 100%;
     }
     h3 {
-      font-size: 40px;
+      font-size: 50px;
     }
    }
    @include breakpoint('large') {
     .offer {
         flex-direction: row;
         padding: 5rem;
+    }
+    .offer-contenForm {
+      padding: 2rem;
     }
    }
