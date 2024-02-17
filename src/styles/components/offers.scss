@@ -54,6 +54,7 @@ h3 {
     margin-top: 1rem;
     font-size: 30px;
     font-weight: 300;
+    color:$pink-magic;
 }
 form {
     font-family: 'Roboto', sans-serif;
@@ -129,6 +130,9 @@ form {
     }
     form {
       width: 100%;
+    }
+    h3 {
+      font-size: 40px;
     }
    }
    @include breakpoint('large') {
