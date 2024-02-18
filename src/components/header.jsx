@@ -24,7 +24,7 @@ export default function Header() {
         </div>
         <div className={`header-menuExpand-container ${changeClassSvg && 'active' }`}>
           <ul>
-            <li>Quienes Somos</li>
+            <li className='header-menuSelect-active'>Quienes Somos</li>
             <li>Pide su mano</li>
             <li>Despedidas</li>
             <li>Grupos</li>
@@ -37,7 +37,10 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <div className='header-menu-langua'>español - ingles</div>
+        <div className='header-menu-langua'>
+          <div>En</div>
+          <div className='header-menu-langua-activeLengua'>Es</div>
+        </div>
       </div>
     </div>
   )

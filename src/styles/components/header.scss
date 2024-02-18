@@ -176,19 +176,25 @@
     position: relative;
     background-image: none;
     opacity: 1;
-    height: 100px;
+    height: auto;
     padding: 0;
     
     ul {
       flex-direction: row;
-      align-items: center;
+      align-items: stretch;
       gap: 1rem;
       background-color: $pink-magic;
-      padding: 1.5rem;
+      padding: 0.5rem 0.5rem;
       border-radius: 5rem;
+      height: 50px;
 
       li {
-        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: 600 !important;
+        padding: 0 0.5rem;
       }
     }
 
@@ -198,7 +204,31 @@
   }
   .header-menu-langua {
     display: flex;
+    align-items: stretch;
     width: 10%;
+    border-radius: 2rem;
+    border: 1px solid $white;
+    font-weight: 600;
+    color: $white;
+    max-width: 5rem;
+
+    div {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0.5rem;
+      width: 50%;
+    }
+
+    .header-menu-langua-activeLengua {
+      background-color: $pink-magic;
+      border-radius: 2rem;
+    }
   }
-  
+
+  .header-menuSelect-active {
+    background-color: $white;
+    border-radius: 1rem;
+    color: black;
+  }
 }
