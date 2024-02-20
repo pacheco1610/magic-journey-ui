@@ -1,0 +1,54 @@
+{
+  "ofertas": [
+    {
+      "subtitulo":"Estas listo para hacer la pregunta",
+      "titulo":"¿Quieres <strong>casarte</strong> conmigo?",
+      "descripcion": "Sabemos que esa decisión no fue fácil y ahora quieres que sea mágico déjanos llevarte de la mano en el proceso. Podemos hacerlo de dos formas escoge alguno de nuestros paquetes que puedes ver a continuación",
+      "formulario": {
+        "titulo": "¿Ya tienes una idea en mente?",
+        "descripcion": "Este formulario nos ayudara a planificar la pedida de mano perfecta para tu pareja"
+      },
+      "paquetes": [
+        {
+          "titulo": "Declaracion de amor Paris",
+          "imagen": "https://cdn0.bodas.net/article/1287/3_2/1280/jpg/17821-shutterstock-409893331.jpeg"
+        },
+        {
+          "titulo": "Declaracion de amor en la playa",
+          "imagen": "https://cdn.milenio.com/uploads/media/2023/04/08/pedida-de-matrimonio-en-la.jpg"
+        }
+      ]
+    },
+    {
+      "subtitulo":"La ultima gran fiesta",
+      "titulo":"Dile adios a tu <strong>solteria</strong>",
+      "descripcion": " Todo lo que necesitas para celebrar el amor y dar la bienvenida a una nueva etapa de tu vida",
+      "formulario": {
+        "titulo": "¿Ya tienes una idea en mente?",
+        "descripcion": "Este formulario nos ayudara a planificar tu despedida perfecta"
+      },
+      "paquetes": [
+        {
+          "titulo": "Despedida en las vegas",
+          "imagen": "https://pbs.twimg.com/media/FPhQtHFXIAUcAZe?format=jpg&name=900x900"
+        }
+      ]
+    },
+    {
+      "subtitulo":"La noche perfecta",
+      "titulo":"Crea tu propia luna de <strong>miel</strong>",
+      "descripcion": " Todo lo que necesitas para celebrar el amor y dar la bienvenida a una nueva etapa de tu vida",
+      "formulario": {
+        "titulo": "¿Ya tienes una idea en mente?",
+        "descripcion": "Este formulario nos ayudara a planificar tu despedida perfecta"
+      },
+      "paquetes": [
+        {
+          "titulo": "Luna de miel en cancun",
+          "imagen": "https://www.kayak.com.mx/news/wp-content/uploads/sites/29/2018/07/lunademiel2.jpg"
+        }
+      ]
+    }
+    
+  ]
+}

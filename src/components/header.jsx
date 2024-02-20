@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from '../assets/logo-horizontal.png'
 
 export default function Header() {
   const [changeClassSvg, setChangeClassSvg] = useState(false)
+  const [changeHeader, setChangeHeader] = useState(false);
+
   return (
-    <div className='header-wrapper'>
+    <div className={`header-wrapper ${changeHeader && 'header-white'}`}>
       <div className="header-container">
         <div className="header-logo">
           <img src={ Logo } alt="magic-journey wedding" />
@@ -37,7 +39,7 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <div className='header-menu-langua'>
+        <div className={`header-menu-langua ${changeHeader && 'header-white'}`}>
           <div>En</div>
           <div className='header-menu-langua-activeLengua'>Es</div>
         </div>

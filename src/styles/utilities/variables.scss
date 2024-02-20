@@ -2,6 +2,8 @@ $white: #fff;
 $pink-magic: #e80a56;
 $purple-magic: #75276f;
 $blue-magic: #005091;
+$grey-magic: #707794;
+$pink-medium: #ffeaed;
 
 
 /* Medias Querys*/
@@ -16,4 +18,17 @@ $bp-new-homepage-max: 1500px !default;
 
 body {
   font-family: 'Product Sans', sans-serif;
+  word-break: auto-phrase;
+}
+
+.main-principal {
+  padding: 0 1rem 1rem 1rem;
+  max-width: 1240px;
+}
+
+@include breakpoint('medium-high') { 
+  .main-principal {
+    margin: 0 auto;
+    padding: 2rem 2rem 0rem 2rem;
+  }
 }

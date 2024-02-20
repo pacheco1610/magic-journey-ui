@@ -2,18 +2,19 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   min-height: 50px;
   width: 100%;
+  z-index: 1000;
+
+  &.header-white {
+    background-color: $white;
+  }
 }
 
 .header-container {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
   width: 100%;
 }
 
@@ -148,20 +149,16 @@
   display: none;
 }
 
+
 @include breakpoint('medium-high') {
   .header-menu {
     display: none;
   }
   .header-wrapper {
-    position: fixed;
     top: 0;
     left: 0;
     background-color: transparent;
     flex: 1 1 1;
-  }
-  
-  .header-container {
-    max-width: 1280px;
   }
 
   .header-logo {
@@ -221,8 +218,14 @@
     }
 
     .header-menu-langua-activeLengua {
+      color: $white;
       background-color: $pink-magic;
       border-radius: 2rem;
+    }
+
+    &.header-white {
+      color: $pink-magic;
+      border: 1px solid $pink-magic;
     }
   }
 
