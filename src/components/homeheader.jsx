@@ -1,5 +1,6 @@
 import React from 'react'
 import weddingBackground from '../assets/wedding-background.jpg'
+import Traslatecopy from './traslatecopy'
 
 export default function homeheader() {
   return (
@@ -7,12 +8,8 @@ export default function homeheader() {
       <div className="Home-slider-background"  style={{backgroundImage:`URL(${weddingBackground})`}}></div>
       <div className="Home-slider-container">
         <div className="Home-slider-text">
-          <span className="Home-slider-title">
-            The World is Wide and the life is short!
-          </span>
-          <span className="Home-slider-descripcion">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error adipisci repellat eius laboriosam eos quisquam, aspernatur odit voluptate vel doloribus ab atque iusto. Libero eligendi nobis eaque, voluptate sint magnam!
-          </span>
+          <Traslatecopy copyId="TITULO_HEADER" tipo="span" clase="Home-slider-title"/>
+          <Traslatecopy copyId="DESCRIPCION_HEADER" tipo="span" clase="Home-slider-descripcion"/>
         </div>
       </div>
     </div>

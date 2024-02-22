@@ -1,13 +1,14 @@
 import React from 'react'
 import imagen1 from '../assets/pedir-mano.jpg'
 import imagen2 from '../assets/soltera.jpg'
+import Traslatecopy from './traslatecopy'
 
 export default function Weare() {
   return (
     <section className="offer">
       <div className="weare-container">
         <div className="offer-contentFormTitle">
-          <span>Creando Experiencias de Amor en Cada Viaje</span>
+          <Traslatecopy copyId="TITULO_NOSOTROS" tipo="span" />
           <h3>Conoce mas sobre <strong>nosotros</strong></h3>
         </div>
         <div className="weare-wrapper">
@@ -18,9 +19,7 @@ export default function Weare() {
                 <h3>
                   ¿Quienes <strong>somos</strong>?
                 </h3>
-                <span>
-                  Somos una empresa especializada en celebraciones románticas, con más de 20 años en la industria turística. Somos expertos en crear momentos inolvidables.
-                </span>
+                <Traslatecopy copyId="PARRAFO_NOSOTROS_DESCRIPCION_1" tipo="span" />
               </div>
             </div>
             <div className='section-weareText'>
@@ -29,9 +28,7 @@ export default function Weare() {
                 <h3>
                   En que te podemos <strong>Ayudar</strong>
                 </h3>
-                <span>
-                  Déjanos ayudarte a hacer ese momento el más mágico de tu vida, desde pedirle a esa persona tan especial para ti que una sus vidas para siempre, hasta decirle adiós a tu soltería o simplemente celebrar tu unión con un viaje maravilloso por el mundo
-                </span>
+                <Traslatecopy copyId="PARRAFO_NOSOTROS_DESCRIPCION_2" tipo="span" />
               </div>
             </div>
           </div>
