@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Logo from '../assets/logo-horizontal.png'
+import Traslatecopy from './traslatecopy'
 
 export default function Header() {
   const [changeClassSvg, setChangeClassSvg] = useState(false)
@@ -11,6 +12,7 @@ export default function Header() {
         <div className="header-logo">
           <img src={ Logo } alt="magic-journey wedding" />
         </div>
+
         <div className={`header-menu ${changeClassSvg && 'active' }`} >
           <svg className={ `ham hamRotate ham4 ${changeClassSvg && 'active' } `} viewBox="0 0 100 100" width="80" onClick={ () => setChangeClassSvg(!changeClassSvg) }>
             <path
@@ -26,14 +28,14 @@ export default function Header() {
         </div>
         <div className={`header-menuExpand-container ${changeClassSvg && 'active' }`}>
           <ul>
-            <li className='header-menuSelect-active'>Quienes Somos</li>
-            <li>Pide su mano</li>
-            <li>Despedidas</li>
-            <li>Grupos</li>
-            <li>Luna de miel</li>
-            <li>Experiencias</li>
-            <li>Planes de pago</li>
-            <li>Contactanos</li>
+            <Traslatecopy copyId="MENU_QUIENES_SOMOS" tipo="li" clase="header-menuSelect-active"/>
+            <Traslatecopy copyId="MENU_PIDE_MANO" tipo="li"/>
+            <Traslatecopy copyId="MENU_DESPEDIDAS" tipo="li"/>
+            <Traslatecopy copyId="MENU_GRUPOS" tipo="li"/>
+            <Traslatecopy copyId="MENU_LUNA_MIEL" tipo="li"/>
+            <Traslatecopy copyId="MENU_EXPERIENCIAS" tipo="li"/>
+            <Traslatecopy copyId="MENU_PLANES_PAGO" tipo="li"/>
+            <Traslatecopy copyId="MENU_CONTACTANOS" tipo="li"/>
             <li className='Header-socialMedia'>
               <img src={ Logo } alt="magic-journey wedding" />
             </li>

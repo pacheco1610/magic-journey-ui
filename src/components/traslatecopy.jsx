@@ -25,6 +25,14 @@ switch (tipo) {
         }
       </h1>
     )
+    case 'h2':
+      return (
+        <h2 name={data.nombre} className={clase}> 
+          {
+            data?.descripcion ? data.descripcion : ""
+          }
+        </h2>
+      )
   case 'span':
     return (
       <span name={data.nombre} className={clase}> 
@@ -49,6 +57,14 @@ switch (tipo) {
           }
         </p>
       )
+      case 'li':
+        return (
+          <li name={data.nombre} className={clase}> 
+            {
+              data?.descripcion ? data.descripcion : ""
+            }
+          </li>
+        )
   default:
     return (
       < > 
