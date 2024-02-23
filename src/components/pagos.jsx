@@ -6,8 +6,8 @@ export default function pagos() {
     <section className="offer">
       <div className="weare-container">
         <div className="offer-contentFormTitle">
-          <Traslatecopy copyId="TITULO_OPCIONES_PAGO" tipo="span" clase=""/>
-          <h3>Opciones <strong>flexibles</strong> de Pago</h3>
+          <Traslatecopy copyId="SUBTITULO_OPCIONES_PAGO" tipo="span"/>
+          <Traslatecopy copyId="TITULO_OPCIONES_PAGO" tipo="h3"/>
           <Traslatecopy copyId="DESCRIPCION_OPCIONES_PAGO" tipo="p" clase=""/>
         </div>
         <div className="pagos-section">

@@ -1,25 +1,20 @@
 import React from 'react'
+import Traslatecopy from './traslatecopy'
 
 export default function footer() {
   return (
     <div className='footer-wrapper'>
       <div className="footer-container">
         <div className='footer-section'>
-          <h1>
-            Descubre Destinos Románticos y Momentos Inolvidables!
-          </h1>
-          <p>
-            Deja ayudarte hacer ese momento el mas magico de tu vida, desde pedirle a esa persona tan especial para ti unir sus vidas para siempre, hasta decirle adios a tu solteria o simplemente celebrar tu union con un viaje maravilloso por el mundo.  
-          </p>
+          <Traslatecopy copyId="TITULO_FOOTER" tipo="h1"/>
+          <Traslatecopy copyId="FOOTER_DESCRIPCION" tipo="span"/>
           <div className='footer-social'>
             <i className="fa-brands fa-facebook"></i>
             <i className="fa-brands fa-instagram"></i>
           </div>
         </div>
         <div className='footer-section'>
-          <h2>
-            Servicios
-          </h2>
+          <Traslatecopy copyId="FOOTER_TITULO_SERVICIO" tipo="h2"/>
           <div className='footer-services'>
             <span>Quienes Somos</span>
             <span>Pide su mano</span>
@@ -32,10 +27,10 @@ export default function footer() {
           </div>
         </div>
         <div className='footer-section'>
-          <h2>Contactanos</h2>
+          <Traslatecopy copyId="FOOTER_TITULO_CONTACTANOS" tipo="h2"/>
           <div className='footer-services'>
             <span>love@magicjourneytravel.com</span>
-            <span>+52</span>
+            <span>+1 702 285 23 81</span>
           </div>
         </div>
       </div>

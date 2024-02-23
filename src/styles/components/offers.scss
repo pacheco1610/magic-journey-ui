@@ -5,14 +5,7 @@
     align-items: center;
     margin-bottom: 4rem;
 }
-.reverse {
-  .offer-carrusel {
-    grid-column: 2;
-  }
-  .offer-contenForm {
-    grid-column: 1;
-  }
-}
+
 .offer-imagen-container {
   min-width: 100%;
   height: 500px;
@@ -84,59 +77,62 @@
 }
 
 form {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+
+  p {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 14px;
+    display: block;
+  }
+
+  input,
+  textarea {
     width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 
-    p {
-      font-size: 16px;
-    }
-  
-    label {
-      font-size: 14px;
-      display: block;
-    }
-  
-    input,
-    textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+  }
 
+  input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0099ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0077cc;
     }
-  
-    input[type="radio"] {
-      width: auto;
-      margin-right: 10px;
-    }
-  
-    textarea {
-      height: 100px;
-    }
-  
-    button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      font-size: 16px;
-      font-weight: 500;
-      color: #fff;
-      background-color: #0099ff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-  
-      &:hover {
-        background-color: #0077cc;
-      }
-    }
+  }
   }
   .btn-submit {
   width: 100%;
   height: 50px;
   background-color: $pink-magic;
   color:#fff;
-  margin-top: 1rem;
+  border-radius: 2rem;
   cursor: pointer;
 }
   .offer-container {
@@ -196,10 +192,18 @@ form {
 
   .offer-carrusel {
     display: flex;
+    flex-direction: column;
     width: 100%;
+    position: relative;
+    max-width: 350px;
+  }
+
+  .offer-carrusel-slider {
+    display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
     position: relative;
+    width: 100%;
   }
 
   .carrusel-controller {
@@ -208,9 +212,9 @@ form {
     bottom: 0;
     display: flex;
     justify-content: center;
-    position: absolute;
     gap: 1rem;
     padding: 1rem;
+    position: absolute;
 
     div {
       border-radius: 100%;
@@ -221,7 +225,80 @@ form {
     }
   }
 
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .offers-form-input-container {
+    position: relative;
+    input {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid $pink-magic;
+      border-radius: 2rem;
+      outline: none;
+      color: $white;
+
+      &:valid ~ span, &:focus ~ span {
+        color: $pink-magic;
+        transform: translateX(1rem) translateY(-0.5rem);
+        padding: 0 0.5rem;
+        background-color: $white;
+        letter-spacing: 0.1rem;
+        font-size: 0.7rem;
+        border: 1px solid $pink-magic;
+        border-radius: 2rem;
+      }
+
+      &:valid {
+        background-color: $pink-magic;
+      }
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 1rem;
+      pointer-events: none;
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.25);
+      transition: 0.3s;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      display: block;
+      background: transparent;
+      bottom: 0;
+      color: transparent;
+      cursor: pointer;
+      height: auto;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: auto;
+    }
+  }
+  
+
   @include breakpoint('medium-high') {
+    .reverse {
+      .offer-carrusel {
+        grid-column: 2;
+      }
+      .offer-contenForm {
+        grid-column: 1;
+      }
+    }
+
+    .offer-carrusel {
+      max-width: 100%;
+    }
+    
     .offer {
       justify-content: center;
       flex-direction: row;

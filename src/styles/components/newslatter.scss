@@ -28,6 +28,12 @@
 
   input {
     width: 100%;
+    font-weight: 600;
+    padding: 0 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
   }
   span {
     display: flex;
